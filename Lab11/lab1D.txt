@@ -1,0 +1,12 @@
+ a=imread("pout.jfif");
+>> [r,c]=size(a);
+>> for i=1:1:c
+k=1;
+for j=r:-1:1
+temp=a(k,i);
+result(k,i)=a(j,i);
+k=k+1;
+end
+end
+>> subplot(1,2,1),imshow(a)
+>> subplot(1,2,2),imshow(result)
